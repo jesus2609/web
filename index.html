@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia de muertos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="header">
+          
+          <ul class="menu top">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">costumbres</a></li>
+              <li><a href="#">fechas</a></li>
+              <li><a href="#">Ubicación</a></li>
+          </ul>
+        </div>
+        <img id="miimagen" src="imagenes/1.jpg"  height="280" width="965" alt="imagen 1" onclick="cambiarimagen()">
+        <script>
+            function cambiarimagen(){
+                const imagen=document.getElementById("miimagen");
+                if (imagen.src.includes("imagenes/1.jpg"))
+                {imagen.src="imagenes/6.jpg";
+                } else if(imagen.src.includes("imagenes/6.jpg")) {imagen.src="imagenes/4.jpg";
+                   
+                }
+                 else if(imagen.src.includes("imagenes/4.jpg"))
+                    {imagen.src="imagenes/.jpg";
+                }
+                else{
+                    imagen.src="5.png";
+                }
+            }
+             </script>
+        <div class="row">
+            <div class="col">
+                <h2>Dia de muertos</h2>
+                <img src="imagenes/2.jpg" height="180" width="250" alt="">
+                <p>El Día de Muertos es una tradición celebrada el 1 y 2 de noviembre en la que se honra la memoria de los muertos. Se originó como un sincretismo entre las celebraciones católicas (especialmente el Día de Todos los Santos y el Día de los Fieles Difuntos) así 
+            como las diversas costumbres de los indígenas de México, Centroamérica, Sudamérica y de Filipinas. </p>
+            </div>
+            <div class="col">
+                <h2>Altar </h2>
+                <img src="imagenes/3.jpg" height="180" width="250" alt="">
+                <p>Las calaveritas de azúcar: representan a la muerte siempre presente. El pan de muerto: hacen alusión a la eucaristía, la fraternidad. El agua: ayuda a calmar la sed de las almas después
+             de un largo camino. Las veladoras: con su luz, ayudan a orientar a los espíritus.</p>
+            </div>
+            <div class="col">
+                <h2>Ofrendas altar de muerto</h2>
+                <img src="imagenes/4.jpg" height="180" width="250" alt="">
+                <p>Ofrendar, en el Día de Muertos, es compartir con los difuntos el pan, la sal, las frutas, los manjares culinarios, el agua y, si son adultos, 
+            el vino. Ofrendar es estar cerca de nuestros muertos para dialogar con su recuerdo, con su vida.</p>
+            </div>
+            <h2>Fechas de dia de muerto</h2>
+                <img src="imagenes/8.jpg" height="180" width="250" alt="">
+                <p>27 de octubre: Se recibe a las mascotas. 28 de octubre: Este día se dedica a las personas que fallecieron de manera trágica o violenta. 29 de octubre: Se conmemora a los ahogados y a aquellos que murieron en accidentes. 30 de 
+                    octubre: Se honra a las almas solitarias, aquellas que no tienen familiares que las recuerden.</p>
+            </div>
+            <div class="col">
+                <h2>Mas sobre el dia de muerto haga click</h2>
+                <a href="https://www.festivaldevidaymuerte.com/es/dia-de-muertos/" target="_blank">
+                <img src="imagenes/7.jpg" height="180" width="250" alt="">
+               
+                
+            </div>
+
+        </div>
+        <div class="footer">
+            <span><a href="#">Enlace 1</a> | <a href="#">Enlace 2</a></span>
+            <ul class="menu">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Dia de muertos</a></li>
+              <li><a href="#">fechas</a></li>
+              <li><a href="#">Ubicación</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
